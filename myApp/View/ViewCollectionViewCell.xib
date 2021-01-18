@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Averta Cyrillic Bold.otf">
+            <string>AvertaCY-Bold</string>
+        </array>
+        <array key="Averta Cyrillic Regular.otf">
+            <string>AvertaCY-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="9Ml-gW-HKH" customClass="ViewCollectionViewCell" customModule="myApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ITP-Pu-c2M">
+                        <rect key="frame" x="20" y="15" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="8gV-0E-b4q"/>
+                            <constraint firstAttribute="width" constant="60" id="RTd-Fs-jzC"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="grE-Nc-dj7">
+                        <rect key="frame" x="94" y="14" width="234" height="74"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhu-04-qds">
+                                <rect key="frame" x="0.0" y="0.0" width="66.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvertaCY-Bold" family="Averta CY" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qb-bD-SYi">
+                                <rect key="frame" x="0.0" y="31.5" width="66.5" height="15.5"/>
+                                <fontDescription key="fontDescription" name="AvertaCY-Regular" family="Averta CY" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdN-pg-8Fl">
+                                <rect key="frame" x="0.0" y="55" width="36.5" height="19"/>
+                                <fontDescription key="fontDescription" name="AvertaCY-Bold" family="Averta CY" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5qb-bD-SYi" firstAttribute="width" secondItem="mhu-04-qds" secondAttribute="width" id="Nh4-He-eYl"/>
+                        </constraints>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="LjH-wS-JOS">
+                        <rect key="frame" x="350" y="30" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="RCT-k7-Fed"/>
+                            <constraint firstAttribute="width" constant="22" id="yxO-Hf-hjv"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LjH-wS-JOS" secondAttribute="trailing" constant="20" id="6uw-ld-FdU"/>
+                <constraint firstItem="LjH-wS-JOS" firstAttribute="top" secondItem="9Ml-gW-HKH" secondAttribute="top" constant="30" id="DPN-B9-9HM"/>
+                <constraint firstAttribute="trailing" secondItem="grE-Nc-dj7" secondAttribute="trailing" constant="64" id="PlN-cw-9i5"/>
+                <constraint firstItem="grE-Nc-dj7" firstAttribute="leading" secondItem="ITP-Pu-c2M" secondAttribute="trailing" constant="14" id="g76-bw-2sS"/>
+                <constraint firstItem="ITP-Pu-c2M" firstAttribute="leading" secondItem="9Ml-gW-HKH" secondAttribute="leading" constant="20" id="jPR-oN-7hV"/>
+                <constraint firstItem="ITP-Pu-c2M" firstAttribute="top" secondItem="9Ml-gW-HKH" secondAttribute="top" constant="15" id="wM2-cD-ago"/>
+                <constraint firstItem="grE-Nc-dj7" firstAttribute="top" secondItem="9Ml-gW-HKH" secondAttribute="top" constant="14" id="wjP-Io-QrP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vYE-lH-qUb"/>
+            <size key="customSize" width="392" height="180"/>
+            <connections>
+                <outlet property="checkmark" destination="LjH-wS-JOS" id="W39-Yx-hol"/>
+                <outlet property="descript" destination="5qb-bD-SYi" id="At4-eO-Lyw"/>
+                <outlet property="icon" destination="ITP-Pu-c2M" id="0ra-U4-guf"/>
+                <outlet property="name" destination="mhu-04-qds" id="gas-f1-gAr"/>
+                <outlet property="price" destination="QdN-pg-8Fl" id="bYi-nE-Zi7"/>
+                <outlet property="stack" destination="grE-Nc-dj7" id="UTs-bh-oo5"/>
+            </connections>
+            <point key="canvasLocation" x="-804" y="42"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark" width="20" height="20"/>
+    </resources>
+</document>
